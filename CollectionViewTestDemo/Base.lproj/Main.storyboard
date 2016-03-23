@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sP8-UG-sqC">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="vBs-Gh-bAB">
+            <objects>
+                <collectionViewController id="sP8-UG-sqC" customClass="ViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="PwG-F6-UlG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jzg-Uu-FE3">
+                            <size key="itemSize" width="128" height="123"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CELLID" id="7QB-8t-GdJ" customClass="CollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="123"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g11-Et-XfH">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="102"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="110" id="czc-ar-Urx"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="czc-ar-Urx"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123455" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPJ-Dz-BP0">
+                                            <rect key="frame" x="0.0" y="102" width="128" height="21"/>
+                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="4r2-Iu-OtW"/>
+                                                <constraint firstAttribute="height" constant="30" id="wbX-OK-Snw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="wbX-OK-Snw"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="g11-Et-XfH" firstAttribute="top" secondItem="7QB-8t-GdJ" secondAttribute="top" id="D9p-wz-ocd"/>
+                                    <constraint firstItem="g11-Et-XfH" firstAttribute="width" secondItem="7QB-8t-GdJ" secondAttribute="width" id="LYw-OL-GG3"/>
+                                    <constraint firstItem="g11-Et-XfH" firstAttribute="leading" secondItem="7QB-8t-GdJ" secondAttribute="leading" id="PX5-XT-YU1"/>
+                                    <constraint firstItem="mPJ-Dz-BP0" firstAttribute="top" secondItem="g11-Et-XfH" secondAttribute="bottom" id="QdC-cq-hhN"/>
+                                    <constraint firstItem="mPJ-Dz-BP0" firstAttribute="leading" secondItem="7QB-8t-GdJ" secondAttribute="leading" id="XMg-17-DNj"/>
+                                    <constraint firstItem="mPJ-Dz-BP0" firstAttribute="top" secondItem="g11-Et-XfH" secondAttribute="bottom" id="YSg-uA-3Et"/>
+                                    <constraint firstItem="mPJ-Dz-BP0" firstAttribute="top" secondItem="g11-Et-XfH" secondAttribute="bottom" constant="14" id="geE-E1-zPk"/>
+                                    <constraint firstItem="mPJ-Dz-BP0" firstAttribute="width" secondItem="g11-Et-XfH" secondAttribute="width" id="lA4-oO-bMv"/>
+                                    <constraint firstAttribute="bottom" secondItem="mPJ-Dz-BP0" secondAttribute="bottom" id="rMl-fq-eYD"/>
+                                    <constraint firstAttribute="trailing" secondItem="mPJ-Dz-BP0" secondAttribute="trailing" id="rmB-ox-YYb"/>
+                                    <constraint firstAttribute="bottom" secondItem="mPJ-Dz-BP0" secondAttribute="bottom" id="sth-9Y-z2K"/>
+                                    <constraint firstItem="g11-Et-XfH" firstAttribute="top" secondItem="7QB-8t-GdJ" secondAttribute="top" id="uJY-OL-J0F"/>
+                                    <constraint firstAttribute="trailing" secondItem="g11-Et-XfH" secondAttribute="trailing" id="wuX-AV-631"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="D9p-wz-ocd"/>
+                                        <exclude reference="QdC-cq-hhN"/>
+                                        <exclude reference="geE-E1-zPk"/>
+                                        <exclude reference="sth-9Y-z2K"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="SHLabel" destination="mPJ-Dz-BP0" id="bEx-ch-yMM"/>
+                                    <outlet property="imageView" destination="g11-Et-XfH" id="6Ka-e0-xYQ"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="sP8-UG-sqC" id="xDp-zA-Rw8"/>
+                            <outlet property="delegate" destination="sP8-UG-sqC" id="Jx9-ak-FQ1"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8lZ-Pf-ZXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="223"/>
+        </scene>
+    </scenes>
+</document>
